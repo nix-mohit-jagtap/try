@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Skills - Mohit Jagtap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="./" class="logo">MOHIT JAGTAP</a>
+        <ul class="nav-list">
+            <li><a href="./" class="nav-link">Home</a></li>
+            <li><a href="./skills.html" class="nav-link active">Skills</a></li>
+            <li><a href="./projects.html" class="nav-link">Projects</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars menu-btn"></i>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="skills-page">
+        <h1 class="page-title">Technical Skills</h1>
+        <p class="page-subtitle">Explore my diverse skill set across multiple domains</p>
+        
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-card">
+                <img src="assets/s-C.jpg" alt="C Programming" loading="lazy">
+                <p>C Programming</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/s-C++.jpg" alt="C++ Programming" loading="lazy">
+                <p>C++ Programming</p>
+            </div>
+
+            <!-- Development Skills -->
+            <div class="skill-card">
+                <img src="assets/s-DSA.jpg" alt="Data Structures" loading="lazy">
+                <p>Data Structures & Algorithms</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/s-webdev.jpg" alt="Web Development" loading="lazy">
+                <p>Web Development</p>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-card">
+                <img src="assets/s-sql.png" alt="SQL Database" loading="lazy">
+                <p>SQL Database</p>
+            </div>
+
+            <!-- Design Tools -->
+            <div class="skill-card">
+                <img src="assets/s-figma.png" alt="Figma Design" loading="lazy">
+                <p>Figma UI/UX Design</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/s-canva.jpg" alt="Canva Design" loading="lazy">
+                <p>Canva Graphic Design</p>
+            </div>
+
+            <!-- Networking -->
+            <div class="skill-card">
+                <img src="assets/s-CN.jpg" alt="Computer Networking" loading="lazy">
+                <p>Computer Networking</p>
+            </div>
+
+            <!-- Hardware Skills -->
+            <div class="skill-card">
+                <img src="assets/s-altium.jpg" alt="Altium Designer" loading="lazy">
+                <p>Altium PCB Design</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/s-elc.jpg" alt="Electronics" loading="lazy">
+                <p>Electronics Engineering</p>
+            </div>
+
+            <!-- Linux & 3D Printing -->
+            <div class="skill-card">
+                <img src="assets/s-linux.png" alt="Linux OS" loading="lazy">
+                <p>Linux System Administration</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/s-3d.jpg" alt="3D Printing" loading="lazy">
+                <p>3D Printing & Prototyping</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/_mohit.jagtap" 
+               target="_blank" 
+               class="social-link"
+               aria-label="Instagram">
+                <img src="assets/inav-icon-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/mohit-jagtap" 
+               target="_blank" 
+               class="social-link"
+               aria-label="LinkedIn">
+                <img src="assets/inav-icon-linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/itsmemohitjagtap" 
+               target="_blank" 
+               class="social-link"
+               aria-label="GitHub">
+                <img src="assets/inav-icon-github.png" alt="GitHub">
+            </a>
+            <a href="https://www.youtube.com/" 
+               target="_blank" 
+               class="social-link"
+               aria-label="YouTube">
+                <img src="assets/inav-icon-youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+
+        // Skill card hover effect
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
