@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Mohit Jagtap - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="./" class="logo">MOHIT JAGTAP</a>
+        <ul class="nav-list">
+            <li><a href="./" class="nav-link active">Home</a></li>
+            <li><a href="./skills.html" class="nav-link">Skills</a></li>
+            <li><a href="./projects.html" class="nav-link">Projects</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars menu-btn"></i>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="hero-section">
+            <div class="profile-content">
+                <img src="assets/i-self_photo.jpg" 
+                     alt="Mohit Jagtap Profile" 
+                     class="profile-image"
+                     loading="lazy">
+                <h1 class="hero-heading">
+                    Hi, I'm Mohit Jagtap <span class="wave">👋</span>
+                </h1>
+                
+                <div class="roles-container">
+                    <h2 class="roles-heading">I'm a</h2>
+                    <div class="roles-slider">
+                        <ul class="roles-list">
+                            <li>Student</li>
+                            <li>Engineer</li>
+                            <li>Astronomer</li>
+                            <li>Developer</li>
+                            <li>Designer</li>
+                            <li>Programmer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/_mohit.jagtap" 
+               target="_blank" 
+               class="social-link"
+               aria-label="Instagram">
+                <img src="assets/inav-icon-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/mohit-jagtap" 
+               target="_blank" 
+               class="social-link"
+               aria-label="LinkedIn">
+                <img src="assets/inav-icon-linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/itsmemohitjagtap" 
+               target="_blank" 
+               class="social-link"
+               aria-label="GitHub">
+                <img src="assets/inav-icon-github.png" alt="GitHub">
+            </a>
+            <a href="https://www.youtube.com/" 
+               target="_blank" 
+               class="social-link"
+               aria-label="YouTube">
+                <img src="assets/inav-icon-youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
